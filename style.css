@@ -1,0 +1,209 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: rgb(79, 79, 79);
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background: #292c35;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover{
+  width: 280px;
+  transition: 1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  display: table;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 18px;
+  margin-left: 12px;
+}
+a:hover{
+  background: #313131;
+}
+a:hover i{
+  color: #b1b1b1;
+  transition: 0.5s;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.container{
+  display: flex;
+}
+
+/* MAin Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  color: #fff;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.main .dispositivos{
+  display: flex;
+  width: 100%;
+}
+.dispositivos .card{
+  width: 25%;
+  margin: 10px;
+  background: #292c35;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.dispositivos .card i{
+  width: 65px;
+  height: 65px;
+  color: #fff;
+}
+.dispositivos .card h4{
+  text-transform: uppercase;
+}
+.dispositivos .card p{
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.dispositivos table{
+  margin:  auto;
+}
+.dispositivos .per span{
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.dispositivos td{
+  font-size: 14px;
+  padding-right: 15px;
+}
+.dispositivos .card button{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.dispositivos .card button:hover{
+  background: #153a72;
+  color: #000000;
+  transition: 0.5s;
+  border: #153a72;
+}
+
+/*Attendance List serction  */
+.attendance{
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #292c35;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.dispositivos .progress{
+  margin: 30px auto;
+  width: 50%;
+
+}
+.dispositivos .progress .toggle-btn{
+  width: 80px;
+  height: 40px;
+  background: gray;
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 300ms ease-in-out;
+}
+.dispositivos .progress .toggle-btn > .inner-circle{
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.dispositivos .progress .toggle-btn.active{
+  background: #21ecf3;
+  box-shadow: 0 0 10px #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+  transition-delay:0.5s;
+}
+.dispositivos .progress .toggle-btn.active> .inner-circle{
+  margin-left: 40px;
+}
